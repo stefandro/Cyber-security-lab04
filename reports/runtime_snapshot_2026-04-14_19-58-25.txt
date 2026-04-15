@@ -1,0 +1,31 @@
+========================================
+Runtime Security Snapshot
+========================================
+Date and time: 2026-04-14 19:58:25
+Total active processes: 34
+Top CPU process: PID=790 PROC=yes CPU=99.9%
+Unauthorized processes: 4
+Total ERROR entries across all logs: 23
+Incident classification: CRITICAL
+Classification summary: at least two suspicious indicators were observed simultaneously
+----------------------------------------
+Thresholds:
+- CPU threshold: 20%
+- ERROR threshold per log: 3
+----------------------------------------
+Triggered indicators:
+- high CPU: top process yes (PID=790) uses 99.9% > threshold 20%
+- unauthorized processes detected: 4
+- log anomaly: at least one mission log exceeds ERROR threshold 3
+----------------------------------------
+Log summary:
+- sat-001.log: 9 ERROR entries
+- sat-002.log: 14 ERROR entries
+- sat-003.log: 0 ERROR entries
+Most unstable log: sat-002.log (14 ERROR entries)
+----------------------------------------
+Unauthorized process details:
+- PID=790 PROC=yes
+- PID=56581 PROC=yes
+- PID=56633 PROC=security_state_
+- PID=56712 PROC=runtime_snapsho

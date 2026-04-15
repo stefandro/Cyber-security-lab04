@@ -1,0 +1,5 @@
+DYNAMIC REPORT
+Total entries: 420
+INFO: 339
+WARN: 58
+ERROR: 23
